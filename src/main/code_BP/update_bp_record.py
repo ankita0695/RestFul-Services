@@ -16,7 +16,7 @@ class UpdateBp:
     def get_data(self):
         self.gb = get_bp_record.GetBp(self.access_token, self.path_dir)
         self.bpname, self.record_no, self.project_number, self.input_params = self.gb.get_input()
-        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/bp/record/" \
+        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/bp/record/" \
                             + self.project_number
         n = int(input("Enter the number of columns to be updated:"))
         data = dict()

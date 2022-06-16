@@ -22,7 +22,7 @@ class GetBp:
 
     def get_bp(self, out_path, out_file):
         # api-endpoint
-        endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/bp/record/" \
+        endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/bp/record/" \
                        + self.project_number + "?input={" + self.input_params + "}"
         # sending get request and saving the response as response object
         r = requests.get(url=endpoint_url, headers={'Authorization': 'Bearer {}'.format(self.access_token)})

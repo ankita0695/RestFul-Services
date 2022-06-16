@@ -12,7 +12,7 @@ class GetUdr:
         self.path_dir = path_dir
         # self.data = {"reportname": "All_PO_Records_Test"}
         # defining the api-endpoint /ws/rest/service/v1/data/udr/get/    /ws/rest/service/v1/bp/record/
-        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/data/udr/get/"
+        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/data/udr/get/"
 
     def get_data(self):
         report_name = input("Enter the UD Report name:")

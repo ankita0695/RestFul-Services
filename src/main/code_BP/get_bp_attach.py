@@ -13,7 +13,7 @@ class GetAttach:
         self.access_token = access_token
         self.path_dir = path_dir
         self.gb = get_bp_record.GetBp(self.access_token, self.path_dir)
-        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/bp/record/file/"
+        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/bp/record/file/"
 
     def get_input(self):
         self.bpname, self.record_no, self.project_number, self.input_params = self.gb.get_input()

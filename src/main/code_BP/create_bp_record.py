@@ -15,7 +15,7 @@ class CreateBp:
 
     def get_bp_record(self):
         self.bpname, self.record_no, self.project_number, self.input_params = self.gb.get_input()
-        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/bp/record/" + self.project_number
+        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/bp/record/" + self.project_number
         self.gb.get_bp('in_files', 'get_record.json')
 
     def get_data(self):

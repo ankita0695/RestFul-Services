@@ -13,7 +13,7 @@ class CreateAttach:
         self.data = None
         self.accesstoken = access_token
         self.path_dir = path
-        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/dev/ws/rest/service/v1/bp/record/file/"
+        self.endpoint_url = "https://us2.unifier.oraclecloud.com/nyulangone/" + main.env + "/ws/rest/service/v1/bp/record/file/"
 
     def get_bp_attach(self):
         a = get_bp_attach.GetAttach(self.accesstoken, self.path_dir)
