@@ -64,7 +64,6 @@ if __name__ == "__main__":
     file, path = main.file, main.path
     a = accesstoken.AccessToken(file)
     a_token = a.get_accesstoken()
-    # print(a_token)
     u = UpdateBp(a_token, path)
     data = u.get_data()
     # u.update_bp(data)
